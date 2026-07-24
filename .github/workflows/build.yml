@@ -19,8 +19,26 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: Cache BuildTools
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository/org/spigotmc
+          key: spigot-nms-1.21.10-1.21.11
+
+      - name: Run BuildTools for 1.21.10
+        run: |
+          mkdir -p buildtools
+          cd buildtools
+          curl -o BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+          java -jar BuildTools.jar --rev 1.21.10 --remapped
+
+      - name: Run BuildTools for 1.21.11
+        run: |
+          cd buildtools
+          java -jar BuildTools.jar --rev 1.21.11 --remapped
+
       - name: Build with Maven
-        run: mvn -B -U package --file pom.xml
+        run: mvn -B package --file pom.xml
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
