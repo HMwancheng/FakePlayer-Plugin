@@ -30,6 +30,7 @@
         <module>fakeplayer-v1_21_8</module>
         <module>fakeplayer-v1_21_9</module>
         <module>fakeplayer-v1_21_10</module>
+        <module>fakeplayer-v1_21_11</module>
     </modules>
 
     <properties>
@@ -60,6 +61,10 @@
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>placeholderapi</id>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
     </repositories>
 
