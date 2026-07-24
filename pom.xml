@@ -14,6 +14,7 @@
         <module>fakeplayer-api</module>
         <module>fakeplayer-core</module>
         <module>fakeplayer-dist</module>
+        <!--
         <module>fakeplayer-v1_20_1</module>
         <module>fakeplayer-v1_20_2</module>
         <module>fakeplayer-v1_20_3</module>
@@ -28,6 +29,7 @@
         <module>fakeplayer-v1_21_6</module>
         <module>fakeplayer-v1_21_7</module>
         <module>fakeplayer-v1_21_8</module>
+        -->
         <module>fakeplayer-v1_21_9</module>
         <module>fakeplayer-v1_21_10</module>
         <module>fakeplayer-v1_21_11</module>
@@ -53,6 +55,9 @@
         <repository>
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
         <repository>
             <id>sonatype</id>
