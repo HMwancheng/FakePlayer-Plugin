@@ -3,7 +3,7 @@ package io.github.hello09x.fakeplayer.v1_21_11.spi;
 import io.github.hello09x.fakeplayer.api.spi.NMSServerPlayer;
 import io.github.hello09x.fakeplayer.core.constant.ConstantPool;
 import io.github.hello09x.fakeplayer.core.util.Reflections;
-import io.github.hello09x.fakeplayer.v1_21_9.network.FakePlayerAdvancements;
+import io.github.hello09x.fakeplayer.v1_21_11.network.FakePlayerAdvancements;
 import lombok.Getter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

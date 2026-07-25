@@ -2,8 +2,8 @@ package io.github.hello09x.fakeplayer.v1_21_11.spi;
 
 import io.github.hello09x.fakeplayer.api.spi.NMSNetwork;
 import io.github.hello09x.fakeplayer.api.spi.NMSServerGamePacketListener;
-import io.github.hello09x.fakeplayer.v1_21_9.network.FakeConnection;
-import io.github.hello09x.fakeplayer.v1_21_9.network.FakeServerGamePacketListenerImpl;
+import io.github.hello09x.fakeplayer.v1_21_11.network.FakeConnection;
+import io.github.hello09x.fakeplayer.v1_21_11.network.FakeServerGamePacketListenerImpl;
 import net.minecraft.server.network.CommonListenerCookie;
 import org.bukkit.Server;
 import org.bukkit.craftbukkit.v1_21_R7.CraftServer;
