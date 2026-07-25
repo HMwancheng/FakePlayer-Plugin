@@ -267,6 +267,9 @@ public class FakeplayerManager {
                     ActionSetting.once()
             ).tick();
         }
+        if (config.isPersistData()) {
+            target.saveData();
+        }
     }
 
     /**

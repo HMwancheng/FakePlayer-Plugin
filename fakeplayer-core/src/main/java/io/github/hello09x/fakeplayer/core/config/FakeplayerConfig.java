@@ -195,7 +195,7 @@ public class FakeplayerConfig extends PluginConfig {
         this.afterQuitCommands = file.getStringList("after-quit-commands");
         this.nameTemplate = file.getString("name-template", "");
         this.dropInventoryOnQuiting = file.getBoolean("drop-inventory-on-quiting", true);
-        this.persistData = file.getBoolean("persist-data", true);
+        this.persistData = file.getBoolean("persistent-data", true);
         this.kickOnDead = file.getBoolean("kick-on-dead", true);
         this.checkForUpdates = file.getBoolean("check-for-updates", true);
         this.namePattern = getNamePattern(file);
